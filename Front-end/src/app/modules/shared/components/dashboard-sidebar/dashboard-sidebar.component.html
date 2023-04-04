@@ -1,0 +1,27 @@
+<aside>
+    <div class="sidebar-header">
+        <h2>Dashboard</h2>
+    </div>
+    <ul class="">
+        <li class="nav-item" [ngClass]="{ 'active': dashboard.isActive }">
+            <a class="nav-link" routerLink="admin/landing-page/dashboard" routerLinkActive
+                #dashboard="routerLinkActive">
+                <i class="bi bi-house-fill"></i>
+                <span class="menu-title">Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item" [ngClass]="{ 'active': dashboard.isActive }">
+            <a class="nav-link" routerLink="admin/landing-page/details" routerLinkActive #dashboard="routerLinkActive">
+                <i class="bi bi-binoculars-fill"></i>
+                <span class="menu-title">View Page Details</span>
+            </a>
+        </li>
+        <li class="nav-item" [ngClass]="{ 'active': dashboard.isActive }">
+            <a class="nav-link" routerLink="admin/landing-page/edit-page" routerLinkActive
+                #dashboard="routerLinkActive">
+                <i class="bi bi-pencil-square"></i>
+                <span class="menu-title">Edit Page</span>
+            </a>
+        </li>
+    </ul>
+</aside>

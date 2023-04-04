@@ -1,0 +1,17 @@
+<header>
+  <nav>
+    <div class="logo" routerLink="/landing">P-Yeboah</div>
+    <ul class="nav-links">
+      <li [ngClass]="{ 'active': home.isActive }">
+        <a routerLink="/online-home" routerLinkActive #home="routerLinkActive"
+          >Home</a
+        >
+      </li>
+      <li><a routerLink="/about-us">About Us</a></li>
+      <li><a routerLink="/contact-us">Contact Us</a></li>
+    </ul>
+    <ul class="nav-social-media__links">
+      <li><a href="">POSSIBLE SOCIAL MEDIA LINKS</a></li>
+    </ul>
+  </nav>
+</header>

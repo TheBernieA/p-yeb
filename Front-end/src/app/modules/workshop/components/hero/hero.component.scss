@@ -1,0 +1,24 @@
+.workshop_hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  .hero_bottom_caption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #ce2026;
+    width: 100%;
+    height: 10rem;
+    color: white;
+    .hero_bottom_caption_content_container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-around;
+      .hero_bottom_caption_content {
+        padding: 2rem 0;
+        width: 20%;
+      }
+    }
+  }
+}

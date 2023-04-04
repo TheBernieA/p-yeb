@@ -1,0 +1,16 @@
+<nav class="workshop_navbar">
+    <div class="logo" routerLink="/landing">P-Yeboah</div>
+    <ul class="nav-links">
+      <li [ngClass]="{ 'active': training.isActive }">
+        <a routerLink="/taining-home" routerLinkActive #training="routerLinkActive"
+          >Home</a
+        >
+      </li>
+      <li><a routerLink="/about-us">About Us</a></li>
+      <li><a routerLink="/about-us">Services</a></li>
+      <li><a routerLink="/contact-us">Contact Us</a></li>
+    </ul>
+    <ul class="nav-social-media__links">
+      <li><a href="">POSSIBLE SOCIAL MEDIA LINKS</a></li>
+    </ul>
+</nav>
