@@ -12,6 +12,8 @@ export class AppComponent {
   showSideBar: boolean = false
   showActions: boolean = true
   routerUrl: string = ''
+  showNavBar: boolean = false
+  showFooter: boolean = false
 
   constructor(private router: Router) {
     router.events.pipe(
@@ -47,6 +49,19 @@ export class AppComponent {
     } else {
       this.showSideBar = false
       this.showActions = false
+
     }
+    if (this.routerUrl.includes('/shop')) {
+      this.showNavBar = true
+    } else {
+      this.showNavBar = false
+    }
+
+    if (this.routerUrl.includes('/shop') || this.routerUrl.includes('/training')) {
+      this.showFooter = true
+    } else {
+      this.showFooter = false
+    }
+
   }
 }

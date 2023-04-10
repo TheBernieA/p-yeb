@@ -11,7 +11,7 @@ export class OnlineShopComponent implements OnInit {
   constructor(private shopService: OnlineShopService) { }
 
   ngOnInit(): void {
-    this.shopService.getProducts().subscribe(data => console.log(data)
-    )
+    // this.shopService.getProducts().subscribe(data => console.log(data)
+    // )
   }
 }

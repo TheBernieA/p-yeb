@@ -3,15 +3,17 @@
     <div class="logo" routerLink="/landing">P-Yeboah</div>
     <ul class="nav-links">
       <li [ngClass]="{ 'active': home.isActive }">
-        <a routerLink="/online-home" routerLinkActive #home="routerLinkActive"
-          >Home</a
-        >
+        <a routerLink="shop/home" routerLinkActive #home="routerLinkActive">Home</a>
       </li>
-      <li><a routerLink="/about-us">About Us</a></li>
-      <li><a routerLink="/contact-us">Contact Us</a></li>
+      <li [ngClass]="{'active': aboutUs.isActive}">
+        <a routerLink="shop/about-us" routerLinkActive="" #aboutUs="routerLinkActive">About Us</a>
+      </li>
+      <li [ngClass]="{'active': contactUs.isActive}">
+        <a routerLink="shop/contact-us" routerLinkActive="" #contactUs="routerLinkActive">Contact Us</a>
+      </li>
     </ul>
-    <ul class="nav-social-media__links">
-      <li><a href="">POSSIBLE SOCIAL MEDIA LINKS</a></li>
+    <ul class="actions">
+      <li><input type="search" title="search page" placeholder="search"></li>
     </ul>
   </nav>
 </header>

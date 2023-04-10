@@ -6,6 +6,9 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ProductsComponent } from './components/products/products.component';
 import { RouterModule } from '@angular/router';
 import { AccessoriesComponent } from './components/accessories/accessories.component';
+import { ShopAboutUsComponent } from './pages/shop-about-us/shop-about-us.component';
+import { ShopContactUsComponent } from './pages/shop-contact-us/shop-contact-us.component';
+import { ShopHomeComponent } from './pages/shop-home/shop-home.component';
 
 
 
@@ -14,13 +17,16 @@ import { AccessoriesComponent } from './components/accessories/accessories.compo
         OnlineShopComponent,
         HeroComponent,
         ProductsComponent,
-        AccessoriesComponent
+        AccessoriesComponent,
+        ShopAboutUsComponent,
+        ShopContactUsComponent,
+        ShopHomeComponent
     ],
     imports: [
         CommonModule,
         RouterModule,
         SharedModule,
     ],
-    exports:[ ]
+    exports: []
 })
 export class OnlineShopModule { }

@@ -3,58 +3,13 @@
         <h2>Available Products</h2>
     </div>
     <div class="products-content">
-        <div class="product-item">
+        <div class="product-item"  *ngFor="let product of products">
             <div class="item-image">
-                <img src="assets/images/shop/pc/macbook.png" alt="">
+                <img src={{product.image}} alt="">
             </div>
             <div class="item-description">
-                <h3 class="item-name">MacBook Pro</h3>
-                <p class="item-context">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, fuga?</p>
-            </div>
-        </div>
-        <div class="product-item">
-            <div class="item-image">
-                <img src="assets/images/shop/pc/macbook.png" alt="">
-            </div>
-            <div class="item-description">
-                <h3 class="item-name">MacBook Pro</h3>
-                <p class="item-context">Apple MB Pro M1 TB SG, 16inch</p>
-            </div>
-        </div>
-        <div class="product-item">
-            <div class="item-image">
-                <img src="assets/images/shop/pc/macbook.png" alt="">
-            </div>
-            <div class="item-description">
-                <h3 class="item-name">MacBook Pro</h3>
-                <p class="item-context">Apple MB Pro M1 TB SG, 16inch</p>
-            </div>
-        </div>
-        <div class="product-item">
-            <div class="item-image">
-                <img src="assets/images/shop/pc/macbook.png" alt="">
-            </div>
-            <div class="item-description">
-                <h3 class="item-name">MacBook Pro</h3>
-                <p class="item-context">Apple MB Pro M1 TB SG, 16inch</p>
-            </div>
-        </div>
-        <div class="product-item">
-            <div class="item-image">
-                <img src="assets/images/shop/pc/macbook.png" alt="">
-            </div>
-            <div class="item-description">
-                <h3 class="item-name">MacBook Pro</h3>
-                <p class="item-context">Apple MB Pro M1 TB SG, 16inch</p>
-            </div>
-        </div>
-        <div class="product-item">
-            <div class="item-image">
-                <img src="assets/images/shop/pc/macbook.png" alt="">
-            </div>
-            <div class="item-description">
-                <h3 class="item-name">MacBook Pro</h3>
-                <p class="item-context">Apple MB Pro M1 TB SG, 16inch</p>
+                <h3 class="item-name">{{product.name}}</h3>
+                <p class="item-context">{{product.description}}</p>
             </div>
         </div>
     </div>

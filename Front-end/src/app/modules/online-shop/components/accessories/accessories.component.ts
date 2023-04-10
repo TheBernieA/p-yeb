@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PRODUCTS } from '../../shop-dummy-db';
 
 @Component({
   selector: 'app-accessories',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./accessories.component.scss']
 })
 export class AccessoriesComponent {
+  product = PRODUCTS
 
 }

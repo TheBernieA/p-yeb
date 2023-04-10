@@ -96,11 +96,12 @@
             color: white;
             padding: 0.7rem;
             border-radius: 0.2rem;
-            a {
+            button {
               width: fit-content;
               border: 2px solid white;
               text-decoration: none;
               color: white;
+              background: transparent;
               padding: 0.3rem 1rem;
               border-radius: 1rem;
               transition: 0.3s ease-in-out;

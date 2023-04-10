@@ -1,6 +1,8 @@
+<app-navbar *ngIf="showNavBar"></app-navbar>
 <div class="main-container">
    <app-dashboard-sidebar style="flex: auto;" *ngIf="showSideBar"></app-dashboard-sidebar>
    <div class="content" [ngStyle]="{'width': showSideBar ? '80%':'100%' }">
       <router-outlet></router-outlet>
+      <app-footer *ngIf="showFooter"></app-footer>
    </div>
 </div>

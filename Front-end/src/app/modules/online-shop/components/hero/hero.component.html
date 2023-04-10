@@ -1,17 +1,7 @@
-<div
-  id="shop-hero"
-  class="shop-hero__carousel carousel slide"
-  data-bs-ride="carousel"
->
+<div id="shop-hero" class="shop-hero__carousel carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button
-      type="button"
-      data-bs-target="#shop-hero"
-      data-bs-slide-to="0"
-      class="active carousel-indicators-button"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
+    <button type="button" data-bs-target="#shop-hero" data-bs-slide-to="0" class="active carousel-indicators-button"
+      aria-current="true" aria-label="Slide 1"></button>
     <button
       type="button"
       data-bs-target="#shop-hero"
@@ -26,36 +16,25 @@
     ></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
+    <div class="carousel-item" [ngClass]="prop.active" data-bs-interval="10000" *ngFor="let prop of images">
       <div class="carousel-item__inner">
         <div class="carousel-caption__container">
           <div class="carousel-caption">
-            <h2>First slide label</h2>
-            <p>Some representative placeholder content for the first slide.</p>
-            <button class="btn btn-danger"><a href="#">Contact Us</a></button>
+            <h2>{{prop.name}}</h2>
+            <p>{{prop.description}}</p>
+            <button class="btn btn-danger"><a routerLink="/shop/contact-us">Contact Us</a></button>
           </div>
         </div>
         <div class="carousel-image__wrapper">
           <div class="carousel-image__container">
-            <img src="{{ selectedImage }}" class="" alt="..." />
+            <img src="{{ prop.image }}" class="" alt="..." />
           </div>
-          <div class="side-image__container">
-            <div
-              class="side-image__item"
-              *ngFor="let image of image; let i = index"
-            >
-              <img
-                src="{{ image.path }}"
-                alt=""
-                (click)="onImageSelect(image.path)"
-              />
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
 
-    <div class="carousel-item" data-bs-interval="2000">
+    <!-- <div class="carousel-item" data-bs-interval="2000">
       <div class="carousel-item__inner">
         <div class="carousel-caption__container">
           <div class="carousel-caption">
@@ -83,9 +62,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="carousel-item">
+    <!-- <div class="carousel-item">
       <div class="carousel-item__inner">
         <div class="carousel-caption__container">
           <div class="carousel-caption">
@@ -113,6 +92,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>

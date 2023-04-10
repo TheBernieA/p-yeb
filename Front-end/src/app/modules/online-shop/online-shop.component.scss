@@ -1,4 +1,6 @@
-.online-shop-wrapper{
-    display: flex;
-    flex-direction: column;
+.online-shop-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 55px);
+  margin-top: 55px;
 }
